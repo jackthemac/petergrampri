@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Peter Gram Private Library</title>
+   <link href="css/jquery.bxslider.css" rel="stylesheet" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+   <link rel="shortcut icon" type="image/png" href="img/gym_favicon.png"/><link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> 
+ <meta name="description" content=""> 
+ <script src="//code.jquery.com/jquery-1.7.2.min.js"></script> 
+ <style>
+     @import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+     /*--- Paragraph Font --*/
+     @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); 
+     /*--- Headings Font --*/
+     * { margin: 0; border: 0; padding: 0; }
+     a { color: #959595; }
+     a:hover { color: #7E99B4; }
+     a:hover#menu-icon { border-radius: 4px 4px 0 0; }
+     .slider { margin-top: 90px;max-width: 100%; }
+     .slider1 img { width: 100%; margin: 0 auto; }
+     .slider .bx-wrapper:hover .bx-controls-direction a { z-index: 5; }
+     .slider .bx-wrapper .bx-prev:hover { opacity: 0.6; }
+     .slider .bx-wrapper .bx-next:hover { opacity: 0.6; }
+     .slider .bx-wrapper .bx-controls-direction a { outline: 0 none;
+        position: absolute;
+        text-indent: -9999px;
+        top: 40%;
+        height: 71px;
+        width: 40px;
+        z-index: -1;
+        transition: all 0.7s; }
+        .slider .bx-wrapper:hover .bx-controls-direction a { z-index: 5; }
+        .slider .bx-wrapper .bx-prev { background:#000 url("img/left-arrow-white.png") no-repeat 8px 13px;
+          left: 0px;
+          opacity: 0.3; }
+          .slider .bx-wrapper .bx-prev:hover { opacity: 0.6; }
+          .slider .bx-wrapper .bx-next { background: #000 url("img/right-arrow-white.png") no-repeat 10px 12px;
+          right: 0px;opacity: 0.3; }
+          .slider .bx-wrapper .bx-next:hover { opacity: 0.6; }
+          .btn:hover {background: #42507D;text-decoration: none;}
+          #submit:hover {background: #42507D;}
+          .subbutton:hover {background: #42507D;color: #FFF;cursor: pointer;}
+          footer a:hover {color: #5567A5;text-decoration: none;}
+          #facebook:hover {color: #3A5795;}
+                    {margin-left: auto;}
+          #twitter:hover {color: #5EA9DD;}
+                     {margin-left: auto;}
+          #youtube:hover {color: #E12B27;}
+                      {margin-left: auto;}
+          .social i:hover {background-color: #959595;}
+          .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover { -webkit-transition: opacity .3s 0s, visibility 0s 0s; -moz-transition: opacity .3s 0s, visibility 0s 0s; transition: opacity .3s 0s, visibility 0s 0s;}
+          .no-touch .cd-top:hover { background-color: #4D4E50; opacity: 1; border: 1px solid #959595;}
+          
+           #map { height: 200px; }
+          /* Checkbox Hack */
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+label { 
+  -webkit-appearance: push-button;
+  -moz-appearance: button; 
+  display: inline-block;
+  background-color: #333333;
+     color:#959595;
+}
+label:hover {
+    color:#7E99B4;
+}
+
+/* Default State */
+form {
+   display: none;
+   position: absolute;
+   top: 150px;
+   left: 0px;
+   opacity: 1;
+   color: #000000;
+   
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ form {
+   display: inline-block;
+}
+          /*--- END SCROLL BUTTON STYLE --*/
+          /*--------------------MEDIA!!!---------------*/
+          @media screen and (max-width: 1190px) {
+              .page-callout {border: none!important;}}
+              @media screen and (max-width: 1020px) {.page-callout {width: 95%!important;}
+              .callout-text {width: 95%!important;text-align: justify!important;}
+              .button-holder {margin: 0 auto!important;width: 95%!important;}
+              .btn {width: 82%!important;margin-bottom: 3%!important;}}
+              @media screen and (max-width: 740px)
+              {header {position: absolute!important;}
+              #menu-icon {display:inline-block!important;}
+              nav ul, nav:active ul { display: none!important;
+              position: absolute!important;
+              padding: 20px!important;
+              background: #405580!important;
+              border: 1px solid #FFF!important;
+              right: 20px!important;
+              top: 60px!important;
+              width: 50%!important;
+              border-radius: 2px 0 2px 2px!important;}
+              nav li {text-align: center!important;
+              width: 100%!important;
+              padding: 10px 0!important;
+              margin: 0!important;}
+              nav:hover ul {display: block!important;}
+              .slider .bx-wrapper .bx-controls {display: none!important;}
+              .head-welcome {font-size: 250%!important;margin-bottom: 1%!important;}
+              .text-welcome {margin: 0!important;}
+              #bread-banner-inner h3 {font-size: 120%!important;
+              .bread-here {font-size: 95%!important;}
+              .circle {width:100px!important;height:100px!important;}
+              .one-third i {text-align: center!important;
+              color: #F0F0F0!important;
+              font-size: 585%!important;
+              padding: 20%!important;}
+              .one-third{float: left!important;
+              width: 100%!important;
+              margin: 0!important;padding: 0!important;}
+              article {float: left!important;width: 100%!important;margin-top: 8%!important;padding: 0!important;}
+              aside {float: left!important;width: 100%!important;margin: 0!important;padding: 0!important;}
+              .gym {text-align: center!important;}
+              .gym h4 {font-size: 160%!important;}
+              .subbutton {float: right!important;width: 55%!important;background: #5567A5!important;font-size: 110%!important;border-radius: 4px!important;color: #FFF!important;margin: 3% 1%!important;padding: 1% 5% 1% 5%!important;}
+              .subbutton:hover {background: #42507D!important;color: #FFF!important;cursor: pointer!important;}.subbutton h5 {color: #FFFFFF!important;}
+              footer .one-third {width: 100%!important;margin: 0!important;}
+              .social i {height: 16px!important;width: 16px!important;border: 1px solid #959595!important;color: #959595!important;font-size: 245%!important;margin: auto!important;padding: 2% 9% 8% 4%!important;}
+              #footer-third {min-height: 150px!important;padding-bottom: 10%!important;border-bottom: 1px solid #959595!important;}
+              #footer-third-last {margin-bottom: 15%!important;}}
+              @media screen and (max-width: 478px) {.head-welcome {font-size: 180%!important;}
+              .text-welcome {font-size: 145%!important;}
+              h3 {font-size: 150%!important;}
+              ul.gym li h4 {font-size: 110%!important;}
+              p {font-size: 100%!important;margin: 2%!important;}
+              .bread-here {display: none!important;}
+              .bread-phone {visibility: visible!important;margin-top: 0!important;}
+              .bread-phone a {color: #959595!important;text-decoration: none!important;}
+              .callout-text {font-size: 115%!important;}
+              .btn {font-size: 125%!important;}}
+              footer a { color: #959595; text-decoration: none;}
+              .social { list-style-type: none; text-align: center; margin: 3% 0; padding: 0;}
+              .social i { height: 20px; width: 20px; border: 1px solid #959595; color: #959595; font-size: 245%; margin: 1%; padding: 2% 7% 7% 4%;}
+              nav ul li a { color: #F0F0F0;}
+              nav ul li a { color: #FFF; text-decoration: none; font-weight: bold;}
+              nav ul li a:hover { color: #7E99B4 }
+              .btn { float: left; text-align: center; -webkit-border-radius: 8; -moz-border-radius: 8; border-radius: 8px; color: #FFFFFF; font-family: 'Ubuntu Condensed', sans-serif; font-size: 180%; background: #5567A5; padding: 10px 23px 10px 23px; font-weight: bold; text-decoration: none;}
+              .cd-top.cd-fade-out { opacity: .5;}
+              .cd-top.cd-is-visible { visibility: visible; opacity: 1;}
+              .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover { -webkit-transition: opacity .3s 0s, visibility 0s 0s; -moz-transition: opacity .3s 0s, visibility 0s 0s; transition: opacity .3s 0s, visibility 0s 0s;}
+              .cd-top { display: inline-block; height: 35px; width: 35px; position: fixed; bottom: 40px; right: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); overflow: hidden; text-indent: 100%; white-space: nowrap; background: #959595 url(img/cd-top-arrow.svg) no-repeat center 50%; visibility: hidden; opacity: 0; -webkit-transition: opacity .3s 0s, visibility 0s .3s; -moz-transition: opacity .3s 0s, visibility 0s .3s; transition: opacity .3s 0s, visibility 0s .3s;}
+          </style>
+          </head>
+          <body style=" background: #ffd9b3; color: #000000; margin: 0;">
+              <header style=" background: #333300; width: 100%; height: 86px; position: fixed; top: 0; left: 0; z-index: 100; opacity: 0.90;">
+                  <div id="header-inner" style=" max-width: 1200px; margin: 0 auto;"><a href="index.html" id="logo" title="" style=" margin: 20px; float: left; width: 200px; height: 60px; background: url(img/the-gym.png) no-repeat center; display: block;"></a><nav style=" float: right; padding: 35px 20px 20px 0px;">
+                     <a href="#" id="menu-icon" style=" width: 40px; height: 40px; background: url(img/icon.png) center; color: #FFF; text-decoration: none; font-weight: bold;"></a>
+                     <ul style=" list-style: none;">
+                          <li style=" font-family: sans-serif; font-size: 110%; display: inline-block; float: left; padding: 10px; text-transform: uppercase;"><a href="index.html";  class="current" style=" color: #FFF; text-decoration: underline; font-weight: bold;">Home</a></li>
+                     <li style=" font-family: sans-serif; font-size: 110%; display: inline-block; float: left; padding: 10px; text-transform: uppercase;"><a href="#A1" class="current" style=" color: #FFF; text-decoration: underline; font-weight: bold;">About</a></li>
+                     <li style=" font-family: sans-serif; font-size: 110%; display: inline-block; float: left; padding: 10px; text-transform: uppercase;"><a href="#A2" class="current" style=" color: #FFF; text-decoration: underline; font-weight: bold;">Facility</a></li>
+                     <li style=" font-family: sans-serif; font-size: 110%; float: left; padding: 10px; text-transform: uppercase;"><a href="#footer-third-last" class="current" style=" color: #FFF; text-decoration: underline; font-weight: bold;">Contact</a></li>
+            </ul>
+             </nav>
+              </div>
+               </header>
+          <!--- Start Slider -->
+          <script src="js/jquery.bxslider.min.js"></script>
+          <!--For Image Slider-->
+          <div class="slide-wrap">
+          <section class="slider">
+          <ul class="slider1">
+    <li><img src="/images/librarydark.jpg" title="" /></li>
+    <li><img src="/images/libraryspecialcol.jpg" title="" /></li>
+    <li><img src="/images/libraryseating.jpg" title="" /></li>
+    <li><img src="/images/librarycomputer.jpg" title="" /></li>
+  </ul>
+  </section>
+  </div><script type="text/javascript">$('.slider1').bxSlider({mode: 'fade',captions: false,auto:true,pager:false,});$('.slider2').bxSlider({pager:false,captions: true,maxSlides: 3,minSlides: 1,slideWidth: 230,slideMargin: 10});$('.slider3').bxSlider({mode: 'fade',captions: false,auto:true,pager:false,controls:false,});</script><!--- End Slider --><div class="clearfix" id="A1" style="clear: both;margin-bottom:50px;"></div>
+  <div id="inner-wrapper" style=" max-width: 1200px; margin: 0 auto;">
+      <h1 class="head-welcome" style=" font-size: 300%; margin-bottom: -40px; font-family: 'Ubuntu Condensed', sans-serif; text-align: center; line-height: 120%; padding: 5% 0;">Private Library</h1>
+      <div class="line-rule" style=" width: 13%; margin: 0 auto; border-top: 5px solid #405580;"></div>
+      <h3 class="text-welcome" style=" text-align: center; margin: -35px 0; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Explore the world First Class at The Peter Gram Private Library</h3>
+      <section class="one-third" style=" width: 29%; float: left; margin: 2% 2%; text-align: justify;">
+          <div class="circle" style=" margin: 0 auto; width: 150px; height: 150px; border-radius: 50%; font-size: 10px; text-align: center; background: #333300;">
+              <i class="fa fa-book fa-fw" style=" text-align: center; color: #FOFOFO; font-size: 885%; padding: 20%;"></i></div>
+              <h3 style=" text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Got it all!</h3>
+                <p style=" font-family: 'Droid Sans', sans-serif; font-size: 120%; padding: 1%;">We have every conceivable book, CD, DVD, audio etc, but if their is something that you can't find, we will find it for you through the interlibrary loan system.</p>
+  </section>
+  <section class="one-third" style=" width: 29%; float: left; margin: 2% 2%; text-align: justify;">
+      <div class="circle" style=" margin: 0 auto; width: 150px; height: 150px; border-radius: 50%; font-size: 10px; text-align: center; background: #333300;">
+          <i class="fa fa-desktop" style=" text-align: center; color: #FOFOFO; font-size: 885%; padding: 20%;"></i>
+          </div>
+  <h3 style=" text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">The Fastest Computers</h3>
+    <p style=" font-family: 'Droid Sans', sans-serif; font-size: 120%; padding: 1%;"> The Library has more than 100 computers with high-speed internet access, up to 200mbps, and Microsoft Office programs for word processing, spreadsheets, and other projects. The library also has WiFi capability for members with their own laptops or other wireless devices.</p>
+  </section>
+  <section class="one-third" style=" width: 29%; float: left; margin: 2% 2%; text-align: justify;">
+      <div class="circle" style=" margin: 0 auto; width: 150px; height: 150px; border-radius: 50%; font-size: 10px; text-align: center; background: #333300;"><i class="fa fa-map-marker" style=" text-align: center; color: #F0F0F0; font-size: 885%; padding: 20%;"></i></div>
+  <h3 style=" text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Easy to find landmark</h3>
+    <div id="map"></div>
+  </section>
+  <div class="clearfix" id="A2" style=" clear: both;margin-bottom:50px;"></div>></div>
+  <article style=" float: left; margin: 0 auto; width: 50%; height: auto; padding: 4%;">
+      <img src="/images/libraryouter.jpg" class="circle-image" title="" style=" border-radius: 70%; text-align: center; max-width: 100%; height: auto; width: auto;"></article>
+      <aside style=" float: right; margin: 0 auto; width: 35%; height: auto; padding: 3%;">
+          <h3 class="text-welcome" style=" text-align: center; margin: -35px 0; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Our Facility</h3>
+      <br>
+      <div class="line-rule" style=" width: 13%; margin: 0 auto; border-top: 5px solid #405580;">
+          </div>
+          <br>
+          <ul class="gym" style=" list-style: none;">
+              <li><h4 style=" font-family: 'Ubuntu Condensed', sans-serif; font-size: 170%; line-height: 190%; padding: 5% 0; text-transform: uppercase;"><i class="fa fa-wheelchair" style=" color: #333300; font-size: 130%; padding-right: 3%;"></i>Ramps, railings, audio and other necessities for the disabled.</h4></li>
+          <li><h4 style=" font-family: 'Ubuntu Condensed', sans-serif; font-size: 170%; line-height: 190%; padding: 5% 0; text-transform: uppercase;"><i class="fa fa-child" style=" color: #333300; font-size: 130%; padding-right: 3%;"></i>Children's library</h4></li>
+          <li><h4 style=" font-family: 'Ubuntu Condensed', sans-serif; font-size: 170%; line-height: 190%; padding: 5% 0; text-transform: uppercase;"><i class="fa fa-search" style=" color: #333300; font-size: 130%; padding-right: 3%;"></i>Special catalogues and other research tools</h4></li>
+          <li>
+              <h4 style=" font-family: 'Ubuntu Condensed', sans-serif; font-size: 170%; line-height: 190%; padding: 5% 0; text-transform: uppercase;">
+                  <i class="fa fa-clock-o" style=" color: #333300; font-size: 130%; padding-right: 3%;"></i>
+                  Open to midnight on weekdays and Saturdays, to 5 on Sundays</h4>
+                  </li>
+                  </ul>
+                  </aside>
+                  <div class="clearfix" style=" clear: both;"></div>
+                  <section class="one-third" style=" width: 29%; float: left; margin: 2% 2%; text-align: justify;">
+                      <h3 class="welcome-text" style=" text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">
+                          Private Desks</h3>
+  <img src="/images/librarydesk.jpg" title="" style=" margin-bottom: 3%; text-align: center; max-width: 100%; height: auto; width: auto;">
+  <p style=" font-family: 'Droid Sans', sans-serif; font-size: 120%; padding: 1%;">Desks for individuals to rent on a monthly or yearly basis.</p>
+  </section>
+  <section class="one-third" style=" width: 29%; float: left; margin: 2% 2%; text-align: justify;">
+      <h3 class="welcome-text" style=" text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">An Antiquarian's Dream!</h3>
+  <img src="/images/libraryrare.jpg" title="" style=" margin-bottom: 3%; text-align: center; max-width: 100%; height: auto; width: auto;"><p style=" font-family: 'Droid Sans', sans-serif; font-size: 120%; padding: 1%;">Explore a vast selection of first editions, signed copies, and rare & antiquarian books from around the world.</p>
+  </section>
+  <section class="one-third" style=" width: 29%; float: left; margin: 2% 2%; text-align: justify;">
+      <h3 class="welcome-text" style=" text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Certified Staff</h3>
+  <img src="/images/libraryconsultation.jpg" title="" style=" margin-bottom: 3%; text-align: center; max-width: 100%; height: auto; width: auto;">
+  <p style=" font-family: 'Droid Sans', sans-serif; font-size: 120%; padding: 1%;">Librarians and other highly accredited professionals will give you any kind of help you need.</p>
+  </section>
+  <div class="clearfix" style=" clear: both;">
+      
+  </div>
+  <!--- Start Page Callout -->
+  <div class="page-callout" style=" width: 90%; min-height: 70px; margin: 3% auto; border: 1px solid #333333;">
+      <p class="callout-text" style=" float: left; width: 75%; font-size: 155%; font-weight: bold; padding: 2%; font-family: 'Droid Sans', sans-serif;">What you want to know about us</p>
+      <div class="button-holder" style=" float: right; width: 19%; padding: 1%; margin-bottom: 4%;">
+          <a class="btn" href="#A1">About Us</a>
+          </div>
+          <!--- End Page Callout -->
+          </div>
+          <!--- End Inner Wrapper -->
+          <div class="clearfix" style=" clear: both;"></div>
+          <!--- Start Footer -->
+          <footer style=" background: #333333; width: 100%; overflow: hidden; opacity: 0.90;">
+              <div id="footer-inner" style=" max-width: 1200px; margin: 0 auto;">
+                  <section class="one-third" id="footer-third" style=" min-height: 250px; border-right: 1px solid #959595; width: 33%; margin: 2% 0; text-align: justify; float: left;">
+                      <h3 style=" color: #959595; text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Contact</h3>
+                      <p class="footercontact" style=" color: #959595; text-align: center; font-family: 'Droid Sans', sans-serif; font-size: 120%; padding: 1%;">The Peter Gram Private Library<br><b class="phone">555-824-3988</b><br><br>449 Broadway<br>Cambridge, MA 02138<br></p>
+  </section>
+  <section class="one-third" id="footer-third" style=" min-height: 250px; border-right: 1px solid #959595; width: 33%; margin: 2% 0; float: left; text-align: justify;">
+      <h3 style=" color: #959595; text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Social</h3><br>
+      <ul class="social" style=" list-style-type: none; margin-left: 35%; padding: 5% 0;">
+          <li style=" display: inline;"><a href="https://www.facebook.com/w3newbie" target="_blank" title="" style=" color: #959595; text-decoration: none; font-weight: bold;"><i class="fa fa-facebook fa-2x fa-fw" id="facebook"></i></a></li>
+          <li style=" display: inline;"></li><li style=" display: inline;"><a href="https://twitter.com/DrewOnCue" target="_blank" title="" style=" color: #959595; text-decoration: none;"><i class="fa fa-twitter fa-2x fa-fw" id="twitter"></i></a></li>
+          <li style=" display: inline;"><a href="https://youtube.com/user/DrewOnCue" target="_blank" title="" style=" color: #959595; text-decoration: none;"><i class="fa fa-youtube fa-2x fa-fw" id="youtube"></i></a></li>
+      </ul>
+      </section>
+ 
+      <section class="one-third" id="footer-third-last" style=" width: 33%; margin: 2% 0; float: left; text-align: justify;">
+          <h3 style=" color: #959595; text-align: center; text-transform: uppercase; font-family: 'Ubuntu Condensed', sans-serif; font-size: 190%; line-height: 190%; padding: 5% 0;">Pages</h3>
+          <br>
+           <h5 style=" font-family: 'Ubuntu Condensed', sans-serif; font-size: 120%; line-height: 190%; text-transform: uppercase; color: #959595; text-align: center;">
+               <a href="index.html">home</a> - 
+               <a href="#A1">about</a> - 
+               <a href="#A2">facility</a> - 
+               <label for="toggle-1">email</label><input type="checkbox" id="toggle-1"><form action="contact_me.php" method="post">
+   <p><h2>name</h2>:<input type="text" name="name" value="Your name"></p>
+   <p><h2>email address</h2>:<input type="text" name="email" value="Your email"></p>
+   <p><h2>express yourself!</h2>:
+    <textarea rows="4" cols="50" name="message">
+    </textarea></p>
+<p><input type="submit" name="submit" value="send"></p>
+</form>
+                     <div></div></h5></section></div></footer>
+            <footer class="second" style=" border-top: 1px solid #4D4E50; background-color: #333333; max-height: 50px; text-align: center; opacity: .95; background: #333333; width: 100%; overflow: hidden;"><p style=" font-family: 'Droid Sans', sans-serif; font-size: 120%; padding: 1%;">© The Peter Gram Private Library, 2017.</p>
+</footer>
+<!--- End Footer -->
+<!--- Top Scroll Start -->
+<a href="#0" class="cd-top cd-is-visible cd-fade-out">Top</a>
+<script>
+function initMap() {
+  var myCenter = new google.maps.LatLng(42.378036,-71.118340);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-zw46XRcn64UkGOVYwQUbey0minFE8Cg&callback=initMap"
+    async defer></script>
+    <script src="js/top.js"></script> 
+  <!-- Gem jQuery -->
+  <script src="js/modernizr.js"></script>
+  <!--- Top Scroll End --> 
+  <!--- slider img:960X479 free weights,gym-floor, ladies-gym.jpg:600X399 round gym-classes.png 680X532 -->
+     </body>
+  </html>   
